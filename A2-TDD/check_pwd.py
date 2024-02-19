@@ -1,3 +1,4 @@
 def check_pwd(pwd):
-    pass
+    if len(pwd) == 14:
+        return True
 
