@@ -10,6 +10,12 @@ class TestCase(unittest.TestCase):
             expected = True
         self.assertEqual(check_pwd(input), expected)
 
+    def test2(self):
+        input = "stringlength_15"
+        expected = 15
+        if expected == 15:
+            exected = True
+        self.assertEqual(check_pwd(input), expected)
 
 if __name__ == '__main__':
     unittest.main()
