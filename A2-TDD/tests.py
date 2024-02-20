@@ -14,7 +14,7 @@ class TestCase(unittest.TestCase):
         input = "stringlength_15"
         expected = 15
         if expected == 15:
-            exected = True
+            expected = True
         self.assertEqual(check_pwd(input), expected)
 
 if __name__ == '__main__':
