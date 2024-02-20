@@ -37,6 +37,9 @@ class TestCase(unittest.TestCase):
         input = "noDigitinpwd"
         self.assertFalse(check_pwd(input))
     
+    def test8(self):
+        input = "noSymbolinpwd1"
+        self.assertFalse(check_pwd(input))
 
 
 if __name__ == '__main__':
