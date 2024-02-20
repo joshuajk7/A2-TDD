@@ -4,7 +4,7 @@ from check_pwd import check_pwd
 class TestCase(unittest.TestCase):
 
     def test1(self):
-        input = "stringlengtH14"
+        input = "stringlengtH-14"
         expected = True
         self.assertEqual(check_pwd(input), expected)
 

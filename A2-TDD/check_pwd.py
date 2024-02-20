@@ -4,6 +4,7 @@ def check_pwd(pwd):
         lowercase_found = False
         uppercase_found = False
         digit_found = False
+        symbol_found = False
 
         for char in pwd:
             if char.islower():
@@ -12,9 +13,11 @@ def check_pwd(pwd):
                 uppercase_found = True
             elif char.isdigit():
                 digit_found = True
+            elif char in "~`!@#$%^&*()_+-=":
+                symbol_found = True
                 
          
-        if not (lowercase_found and uppercase_found and digit_found):
+        if not (lowercase_found and uppercase_found and digit_found and symbol_found):
             return False
         
         return True
