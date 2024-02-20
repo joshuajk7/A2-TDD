@@ -33,6 +33,12 @@ class TestCase(unittest.TestCase):
         expected = False
         self.assertEqual(check_pwd(input), expected)
 
+    def test7(self):
+        input = "noDigitinpwd"
+        self.assertFalse(check_pwd(input))
+    
+
+
 if __name__ == '__main__':
     unittest.main()
     
