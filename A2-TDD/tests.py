@@ -6,7 +6,9 @@ class TestCase(unittest.TestCase):
     def test1(self):
         input = "stringlength14"
         expected = 14
-        self.assertTrue(check_pwd(input), expected)
+        if expected == 14:
+            expected = True
+        self.assertEqual(check_pwd(input), expected)
 
 
 if __name__ == '__main__':
